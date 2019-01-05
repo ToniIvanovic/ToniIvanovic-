@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="images/rlog.ico"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Toni | Portfolio</title>
+  <link rel="stylesheet" href="css/ps.css">
+</head>
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#111" stroke-width="5"/>
+            <path d="M0,14 20,14" stroke="#111" stroke-width="5"/>
+            <path d="M0,23 25,23" stroke="#111" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div id="main">
+  </div>
+
+  <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+
+  <img src="images/logos/rl.png" class="rl">
+
+  <button id="modalBtn" class="button"></button>
+  <button id="LGmodalBtn" class="LGbutton"></button>
+  <button id="TMmodalBtn" class="TMbutton"></button>
+  <button id="TRmodalBtn" class="TRbutton"></button>
+  <button id="HDmodalBtn" class="HDbutton"></button>
+  <button id="MTmodalBtn" class="MTbutton"></button>
+
+  <div>
+    <img src="images/thumbnails/banners.png" class="bnr">
+    <img src="images/thumbnails/logos.png" class="lg">
+    <img src="images/thumbnails/thumbnails.png" class="thmb">
+    <img src="images/thumbnails/t.png" class="thr">
+    <img src="images/thumbnails/hand drawn.png" class="hd">
+    <img src="images/thumbnails/motion.png" class="mtn">
+  </div>
+
+  <!--BANNERS POP UP-->
+
+  <div id="simpleModal" class="modal"> 
+      <div class="modal-content">
+          <div class="modal-header">
+            <span class="closeBtn">&times;</span>
+            <h2 class="banners">Banners</h2>          
+          </div>
+          <div class="modal-body">
+          <img src="images/banners/dinchey.png" class="dnc">
+          <img src="images/banners/dz.png" class="dz">
+          <img src="images/banners/jax.png" class="jax">
+          <img src="images/banners/kruska.png" class="krs">
+          <img src="images/banners/mcr.png" class="mcr">
+          <img src="images/banners/naos blue.png" class="nab">
+          <img src="images/banners/naos purple.png" class="nap">
+          <img src="images/banners/stf.png" class="stf">
+          <img src="images/banners/a.png" class="a">
+          <img src="images/banners/finished.gif" class="fns">
+          <img src="images/banners/mbn.gif" class="mbn">
+          <p class="BNRftr">© 2019 Toni</p>
+          <p class="BNRftr2">Created & Designer by Toni</p>
+          </div>
+      </div>
+  </div>
+
+  <!--LOGOS POP UP-->
+
+  <div id="LGsimpleModal" class="LGmodal"> 
+      <div class="LGmodal-content">
+          <div class="LGmodal-header">
+            <span class="LGcloseBtn">&times;</span>
+            <h3 class="logos">Logos</h3>          
+          </div>
+          <div class="LGmodal-body">
+          <img src="images/logos/c.png" class="c">
+          <img src="images/logos/b.png" class="b">
+          <img src="images/logos/mcb.png" class="mcb">
+          <img src="images/logos/et.png" class="et">
+          <img src="images/logos/sw logo.png" class="sw">
+          <img src="images/logos/sn.png" class="sn">
+          <img src="images/logos/rainy.png" class="rn">
+          <img src="images/logos/astrum.png" class="as">
+          <img src="images/logos/ac.png" class="ac">
+          <img src="images/logos/rf logo.png" class="rf">
+
+          <p class="LGftr">© 2019 Toni</p>
+          <p class="LGftr2">Created & Designer by Toni</p>
+          </div>
+      </div>
+  </div>
+
+  <!--THUMBNAILS POP UP-->
+
+    <div id="TMsimpleModal" class="TMmodal"> 
+      <div class="TMmodal-content">
+          <div class="TMmodal-header">
+            <span class="TMcloseBtn">&times;</span>
+            <h3 class="thumbnails">Thumbnails</h3>          
+          </div>
+          <div class="TMmodal-body">
+          <img src="images/thumbnails/dbp.png" class="dbp">
+          <img src="images/thumbnails/live.png" class="liv">
+          <img src="images/thumbnails/mtp.png" class="mtp">
+          <img src="images/thumbnails/ss.png" class="ss">
+          <img src="images/thumbnails/uh.png" class="uh">
+          <img src="images/thumbnails/l.jpg" class="l">
+          <img src="images/thumbnails/bk.jpg" class="bk">
+          <img src="images/thumbnails/orng.jpg" class="orn">
+          <img src="images/thumbnails/af.png" class="af">
+          <img src="images/thumbnails/sg.png" class="sg">
+
+            <p class="TMftr">© 2019 Toni</p>
+            <p class="TMftr2">Created & Designer by Toni</p>
+          </div>
+      </div>
+  </div>
+
+    <!--THREADS POP UP-->
+
+    <div id="TRsimpleModal" class="TRmodal"> 
+      <div class="TRmodal-content">
+          <div class="TRmodal-header">
+            <span class="TRcloseBtn">&times;</span>
+            <h3 class="threads">Threads</h3>          
+          </div>
+          <div class="TRmodal-body">
+          <img src="images/threads/tu.png" class="tu">
+          <img src="images/threads/zes.png" class="zes">
+          <img src="images/threads/tt.png" class="tt">
+          <img src="images/threads/cst.png" class="cst">
+
+            <p class="TRftr">© 2019 Toni</p>
+            <p class="TRftr2">Created & Designer by Toni</p>
+          </div>
+      </div>
+  </div>
+
+      <!--HAND DRAWN POP UP-->
+
+    <div id="HDsimpleModal" class="HDmodal"> 
+      <div class="HDmodal-content">
+          <div class="HDmodal-header">
+            <span class="HDcloseBtn">&times;</span>
+            <h3 class="HD">Hand Drawn</h3>          
+          </div>
+          <div class="HDmodal-body">
+          <img src="images/HD/creepy.png" class="crp">
+          <img src="images/HD/ET logo.png" class="het">
+          <img src="images/HD/human.png" class="hmn">
+          <img src="images/HD/RF logo.png" class="hrf">
+          <img src="images/HD/mcb.png" class="hmcb">
+          <img src="images/HD/viking.png" class="vik">
+
+            <p class="HDftr">© 2019 Toni</p>
+            <p class="HDftr2">Created & Designer by Toni</p>
+          </div>
+      </div>
+  </div>
+
+      <!--HAND DRAWN POP UP-->
+
+  <div id="MTsimpleModal" class="MTmodal"> 
+      <div class="MTmodal-content">
+          <div class="MTmodal-header">
+            <span class="MTcloseBtn">&times;</span>
+            <h3 class="MT">Motion Designs</h3>          
+          </div>
+          <div class="MTmodal-body">
+          <img src="images/motion/finished.gif" class="MTfin">
+          <img src="images/motion/mcb.gif" class="MTmcb">
+
+            <p class="MTftr">© 2019 Toni</p>
+            <p class="MTftr2">Created & Designer by Toni</p>
+          </div>
+      </div>
+  </div>
+
+  <p class="ftr">© 2019 Toni</p>
+  <p class="ftr2">Created & Designer by Toni</p>
+
+<script src="pjs.js"></script>
+</body>
+</html>

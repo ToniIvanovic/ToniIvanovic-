@@ -1,0 +1,1059 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #f5f5f5;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* MY CODE*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body{
+  font-family:"Lato", sans-serif;
+  background-color:#f5f5f5;
+  overflow-x:hidden;
+}
+
+.navbar{
+  background-color:#f5f5f5;
+  overflow:hidden;
+  height:63px;
+}
+
+.navbar a{
+  float:left;
+  display:block;
+  color:#f5f5f5;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+  font-size:17px;
+}
+
+.navbar ul{
+  margin:8px 0 0 0;
+  list-style:none;
+}
+
+.navbar a:hover{
+  background-color:#f5f5f5;
+  color:#000;
+}
+
+.side-nav{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color: #fff;
+  opacity:1;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.5s;
+}
+
+.side-nav a{
+  padding:10px 10px 10px 30px;
+  text-decoration:none;
+  font-size:22px;
+  color:#111;
+  display:block;
+  transition:0.3s;
+}
+
+.side-nav a:hover{
+  color:#f5f5f5;
+}
+
+.side-nav .btn-close{
+  position:absolute;
+  top:0;
+  right:22px;
+  font-size:36px;
+  margin-left:50px;
+}
+
+#main{
+  transition:margin-left 0.5s;
+  padding:20px;
+  overflow:hidden;
+  width:100%;
+}
+
+.rl{
+  display: block;
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-top: -96px;
+}
+
+.bnr {
+  display: block;
+  float: none;
+  margin-left: 270px;
+  width: 500px;
+  height: auto;
+}
+
+.lg {
+  display: block;
+  float: none;
+  margin-left: 840px;
+  margin-top: -275px;
+  width: 500px;
+  height: auto;
+}
+
+.thmb {
+  display: block;
+  float: none;
+  margin-left: 1360px;
+  margin-top: -275px;
+  width: 500px;
+  height: auto;
+}
+
+.thr {
+  display: block;
+  float: none;
+  margin-left: 270px;
+  margin-top: 100px;
+  width: 500px;
+  height: auto;
+}
+
+.hd {
+  display: block;
+  float: none;
+  margin-left: 840px;
+  margin-top: -280px;
+  width: 500px;
+  height: auto;
+}
+
+.mtn {
+  display: block;
+  float: none;
+  margin-left: 1360px;
+  margin-top: -275px;
+  width: 500px;
+  height: auto;
+}
+
+.ftr{
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 160px;
+  margin-left: 10px;
+}
+
+.ftr2{
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: -15px;
+  margin-left: 1705px;
+}
+
+/*BANNERS POP UP*/
+
+.button{
+  display: block;  
+  position: fixed;
+  margin-left: 270px;
+  margin-top: none;
+  width: 500px;
+  height: 300px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+
+.button:hover{
+  cursor: pointer;
+  background-color: rgba(17,17,17,0.2);
+}
+
+.modal{
+  display:none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 1387px;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+  overflow: auto;
+  animation-name:modalopen;
+  animation-duration: 0.5s;
+}
+
+.closeBtn{
+  color: #111;
+  float: right;
+  font-size: 50px;
+}
+
+.closeBtn:hover, .closeBtn:focus{
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.banners{
+  font-family: Segoe UI, sans-serif;
+  color: #111;
+  text-align: center;
+  font-size: 50px;
+}
+
+.dnc{
+  display: block;
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 500px;
+  height: auto;
+}
+
+.dz{
+  display: block;
+  margin-top: -280px;
+  margin-left: 700px;
+  width: 500px;
+  height: auto;
+}
+
+.jax{
+  display: block;
+  margin-top: -283px;
+  margin-left: 1300px;
+  width: 500px;
+  height: auto;
+}
+
+.krs{
+  display: block;
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 500px;
+  height: auto;
+}
+
+.mcr{
+  display: block;
+  margin-top: -280px;
+  margin-left: 700px;
+  width: 500px;
+  height: auto;
+}
+
+.nab{
+  display: block;
+  margin-top: -282px;
+  margin-left: 1300px;
+  width: 500px;
+  height: auto;
+}
+
+.nap{
+  display: block;
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 500px;
+  height: auto;
+}
+
+.stf{
+  display: block;
+  margin-top: -280px;
+  margin-left: 700px;
+  width: 500px;
+  height: auto;
+}
+
+.a{
+  display: block;
+  margin-top: -282px;
+  margin-left: 1300px;
+  width: 500px;
+  height: auto;
+}
+
+.fns{
+  display: block;
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 500px;
+  height: auto;
+}
+
+.mbn{
+  display: block;
+  margin-top: 75px;
+  margin-left: 100px;
+  width: 500px;
+  height: auto;
+}
+
+.BNRftr{
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.BNRftr2{
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: -20px;
+  margin-left: 1705px;
+}
+
+@keyframes modalopen{
+  from{opacity: 0}
+  to{opacity: 1}
+}
+
+/*LOGOS POP UP*/
+
+.LGbutton{
+  display: block;  
+  position: fixed;
+  margin-left: 840px;
+  margin-top: none;
+  width: 500px;
+  height: 300px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+
+.LGbutton:hover{
+  cursor: pointer;
+  background-color: rgba(17,17,17,0.2);
+}
+
+.LGmodal{
+  display:none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 1387px;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.LGmodal-content{
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+  overflow: auto;
+  animation-name:LGmopen;
+  animation-duration: 0.5s;
+}
+
+.LGcloseBtn{
+  color: #111;
+  float: right;
+  font-size: 50px;
+}
+
+.LGcloseBtn:hover, .LGcloseBtn:focus{
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logos{
+  font-family: Segoe UI, sans-serif;
+  color: #111;
+  text-align: center;
+  font-size: 50px;
+}
+
+.c{
+  display: block;
+  margin-top: 20px;
+  margin-left: 100px;
+  width: 400px;
+  height: auto;
+}
+
+.b{
+  display: block;
+  margin-top: -438px;
+  margin-left: 700px;
+  width: 477px;
+  height: auto;
+}
+
+.mcb{
+  display: block;
+  margin-top: -470px;
+  margin-left: 1300px;
+  width: 500px;
+  height: auto;
+}
+
+.et{
+  display: block;
+  margin-top: 50px;
+  margin-left: 70px;
+  width: 470px;
+  height: auto;
+}
+
+.sw{
+  display: block;
+  margin-top: -470px;
+  margin-left: 700px;
+  width: 470px;
+  height: auto;
+}
+
+.sn{
+  display: block;
+  margin-top: -570px;
+  margin-left: 1200px;
+  width: 700px;
+  height: auto;
+}
+
+.rn{
+  display: block;
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 500px;
+  height: auto;
+}
+
+.as{
+  display: block;
+  margin-top: -280px;
+  margin-left: 700px;
+  width: 500px;
+  height: auto;
+}
+
+.ac{
+  display: block;
+  margin-top: -282px;
+  margin-left: 1300px;
+  width: 500px;
+  height: auto;
+}
+
+.rf{
+  display: block;
+  margin-top: 40px;
+  margin-left: 100px;
+  width: 500px;
+  height: auto;
+}
+
+.LGftr{
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.LGftr2{
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: -20px;
+  margin-left: 1705px;
+}
+
+
+@keyframes LGmopen{
+  from{opacity: 0}
+  to{opacity: 1}
+}
+
+/*THUMBNAILS POP UP*/
+
+.TMbutton{
+  display: block;  
+  position: fixed;
+  margin-left: 1360px;
+  margin-top: none;
+  width: 500px;
+  height: 300px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+
+.TMbutton:hover{
+  cursor: pointer;
+  background-color: rgba(17,17,17,0.2);
+}
+
+.TMmodal{
+  display:none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 1387px;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.TMmodal-content{
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+  overflow: auto;
+  animation-name:TMmopen;
+  animation-duration: 0.5s;
+}
+
+.TMcloseBtn{
+  color: #111;
+  float: right;
+  font-size: 50px;
+}
+
+.TMcloseBtn:hover, .TMcloseBtn:focus{
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.thumbnails{
+  font-family: Segoe UI, sans-serif;
+  color: #111;
+  text-align: center;
+  font-size: 50px;
+}
+
+.dbp{
+  display: block;
+  margin-top: 20px;
+  margin-left: 100px;
+  width: 500px;
+  height: auto;
+}
+
+.liv{
+  display: block;
+  margin-top: -282px;
+  margin-left: 700px;
+  width: 500px;
+  height: auto;
+}
+
+.mtp{
+  display: block;
+  margin-top: -282px;
+  margin-left: 1300px;
+  width: 500px;
+  height: auto;
+}
+
+.ss{
+  display: block;
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 500px;
+  height: auto;
+}
+
+.uh{
+  display: block;
+  margin-top: -282px;
+  margin-left: 700px;
+  width: 500px;
+  height: auto;
+}
+
+.l{
+  display: block;
+  margin-top:-282px;
+  margin-left: 1300px;
+  width: 500px;
+  height: auto;
+}
+
+.bk{
+  display: block;
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 500px;
+  height: auto;
+}
+
+.orn{
+  display: block;
+  margin-top: -282px;
+  margin-left: 700px;
+  width: 500px;
+  height: auto;
+}
+
+.af{
+  display: block;
+  margin-top: -282px;
+  margin-left: 1300px;
+  width: 500px;
+  height: auto;
+}
+
+.sg{
+  display: block;
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 500px;
+  height: auto;
+}
+
+.TMftr{
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.TMftr2{
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: -20px;
+  margin-left: 1705px;
+}
+
+
+
+@keyframes TMmopen{
+  from{opacity: 0}
+  to{opacity: 1}
+}
+
+/*THREADS POP UP*/
+
+.TRbutton{
+  display: block;  
+  position: fixed;
+  margin-left: 270px;
+  margin-top: 380px;
+  width: 500px;
+  height: 300px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+
+.TRbutton:hover{
+  cursor: pointer;
+  background-color: rgba(17,17,17,0.2);
+}
+
+.TRmodal{
+  display:none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 1387px;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.TRmodal-content{
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+  overflow: auto;
+  animation-name:TRmopen;
+  animation-duration: 0.5s;
+}
+
+.TRcloseBtn{
+  color: #111;
+  float: right;
+  font-size: 50px;
+}
+
+.TRcloseBtn:hover, .TRcloseBtn:focus{
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.threads{
+  font-family: Segoe UI, sans-serif;
+  color: #111;
+  text-align: center;
+  font-size: 50px;
+}
+
+.tu{
+  display: block;
+  margin-top: 20px;
+  margin-left: 1300px;
+  width: 500px;
+  height: auto;
+}
+
+.zes{
+  display: block;
+  margin-top: -2188px;
+  margin-left: 700px;
+  width: 500px;
+  height: auto;
+}
+
+.tt{
+  display: block;
+  margin-top: -2188px;
+  margin-left: 100px;
+  width: 500px;
+  height: auto;
+}
+
+.cst{
+  display: block;
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 500px;
+  height: auto;
+}
+
+.TRftr{
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.TRftr2{
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: -20px;
+  margin-left: 1705px;
+}
+
+
+@keyframes TRmopen{
+  from{opacity: 0}
+  to{opacity: 1}
+}
+
+/*HAND DRAWN POP UP*/
+
+.HDbutton{
+  display: block;  
+  position: fixed;
+  margin-left: 830px;
+  margin-top: 380px;
+  width: 500px;
+  height: 300px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+
+.HDbutton:hover{
+  cursor: pointer;
+  background-color: rgba(17,17,17,0.2);
+}
+
+.HDmodal{
+  display:none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 1387px;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.HDmodal-content{
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+  overflow: auto;
+  animation-name:HDmopen;
+  animation-duration: 0.5s;
+}
+
+.HDcloseBtn{
+  color: #111;
+  float: right;
+  font-size: 50px;
+}
+
+.HDcloseBtn:hover, .HDcloseBtn:focus{
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.HD{
+  font-family: Segoe UI, sans-serif;
+  color: #111;
+  text-align: center;
+  font-size: 50px;
+}
+
+.crp{
+  display: block;
+  margin-top: 100px;
+  margin-left: 70px;
+  width: 650px;
+  height: auto;
+}
+
+.het{
+  display: block;
+  margin-top: -340px;
+  margin-left: 640px;
+  width: 600px;
+  height: auto;
+}
+
+.hmn{
+  display: block;
+  margin-top: -320px;
+  margin-left: 1240px;
+  width: 650px;
+  height: auto;
+}
+
+.hrf{
+  display: block;
+  margin-top: 100px;
+  margin-left: 70px;
+  width: 650px;
+  height: auto;
+}
+
+.vik{
+  display: block;
+  margin-top: -400px;
+  margin-left: 620px;
+  width: 680px;
+  height: auto;
+}
+
+.hmcb{
+  display: block;
+  margin-top: -465px;
+  margin-left: 1300px;
+  width: 500px;
+  height: auto;
+}
+
+.HDftr{
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.HDftr2{
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: -20px;
+  margin-left: 1705px;
+}
+
+
+
+@keyframes HDmopen{
+  from{opacity: 0}
+  to{opacity: 1}
+}
+
+/*MOTION DESIGNS POP UP*/
+
+.MTbutton{
+  display: block;  
+  position: fixed;
+  margin-left: 1360px;
+  margin-top: 380px;
+  width: 500px;
+  height: 300px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+
+.MTbutton:hover{
+  cursor: pointer;
+  background-color: rgba(17,17,17,0.2);
+}
+
+.MTmodal{
+  display:none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 1387px;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.MTmodal-content{
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+  overflow: auto;
+  animation-name:MTmopen;
+  animation-duration: 0.5s;
+}
+
+.MTcloseBtn{
+  color: #111;
+  float: right;
+  font-size: 50px;
+}
+
+.MTcloseBtn:hover, .MTcloseBtn:focus{
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.MT{
+  font-family: Segoe UI, sans-serif;
+  color: #111;
+  text-align: center;
+  font-size: 50px;
+}
+
+.MTfin{
+  display: block;
+  margin-top: 100px;
+  margin-left: 70px;
+  width: 650px;
+  height: auto;
+}
+
+.MTmcb{
+  display: block;
+  margin-top: -83px;
+  margin-left: 1200px;
+  width: 642px;
+  height: auto;
+}
+
+.MTftr{
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 720px;
+  margin-left: 10px;
+}
+
+.MTftr2{
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: -20px;
+  margin-left: 1705px;
+}
+
+@keyframes MTmopen{
+  from{opacity: 0}
+  to{opacity: 1}
+}
